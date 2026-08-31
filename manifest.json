@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "ciryon.pullbar",
+  "id": "io.github.ciryon.pullbar",
   "name": "Pull requests",
   "version": "0.1.0",
   "author": "ciryon",

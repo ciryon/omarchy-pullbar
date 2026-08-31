@@ -10,8 +10,8 @@ import qs.Ui
 // from `gh search prs` via prs.sh; clicking a row opens it in the browser.
 Panel {
   id: root
-  moduleName: "ciryon.pullbar"
-  ipcTarget: "ciryon.pullbar"
+  moduleName: "io.github.ciryon.pullbar"
+  ipcTarget: "io.github.ciryon.pullbar"
   manageIpc: false
 
   readonly property int refreshIntervalSec: Math.max(60, parseInt(String(setting("refreshIntervalSec", 300)), 10) || 300)
