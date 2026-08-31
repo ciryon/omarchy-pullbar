@@ -83,3 +83,5 @@ to an empty group rather than an error.
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+<!-- planned: per-PR CI status -->
