@@ -71,7 +71,7 @@ Panel {
   }
 
   function openEntry(entry) {
-    if (!entry || !entry.url) return
+    if (!entry || !String(entry.url).startsWith("https://")) return
     Qt.openUrlExternally(entry.url)
     close()
   }
@@ -230,6 +230,7 @@ Panel {
                   Text {
                     width: parent.width
                     text: modelData.title
+                    textFormat: Text.PlainText
                     color: modelData.draft ? root.dim : root.foreground
                     font.family: root.fontFamily
                     font.pixelSize: Style.font.body
@@ -239,6 +240,7 @@ Panel {
                   Text {
                     width: parent.width
                     text: modelData.repo + " #" + modelData.number + (modelData.draft ? " · draft" : "")
+                    textFormat: Text.PlainText
                     color: root.dim
                     font.family: root.fontFamily
                     font.pixelSize: Style.font.caption
